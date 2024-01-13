@@ -57,12 +57,12 @@ d=0
 for i in range(1,26):
   for j in range(1,26):
     for w in range(1,26):
-      K[d][0]=(math.pi/(a11**2+a12**2+a13**2)**0.5)*0.5/26*i
-      K[d][1]=(math.pi/(a21**2+a22**2+a23**2)**0.5)*0.5/26*j
-      K[d][2]=(math.pi/(a31**2+a32**2+a33**2)**0.5)*0.5/26*w
-      G_1[d][0]=(math.pi/b1_length)/3*i
-      G_1[d][1]=(math.pi/b2_length)/3*j
-      G_1[d][2]=(math.pi/b3_length)/3*w
+      K[d][0]=(2*math.pi/(a11**2+a12**2+a13**2)**0.5)/26*i
+      K[d][1]=(2*math.pi/(a21**2+a22**2+a23**2)**0.5)/26*j
+      K[d][2]=(2*math.pi/(a31**2+a32**2+a33**2)**0.5)/26*w
+      G_1[d][0]=(b1_length)/26*i
+      G_1[d][1]=(b2_length)/26*j
+      G_1[d][2]=(b3_length)/26*w
       d=d+1
 
 #Определим гамма-функцию Эйлера
